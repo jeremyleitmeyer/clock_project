@@ -1,4 +1,6 @@
 var clock = document.getElementById("clock")
+var bg = document.getElementById("bg-color")
+
 
 function itsTime() {
   var time = new Date()
@@ -20,14 +22,9 @@ function itsTime() {
   
   var hex = `#${hours}${minutes}${seconds}`
   
- 
-  var bg = document.getElementById("bg-color")
-  
   bg.style.backgroundColor = hex
   
-  hex = `${hours}:${minutes}:${seconds}`
-  
-  clock.innerHTML = hex
+  clock.innerHTML = `${hours}:${minutes}:${seconds}`
 }
 
 setInterval(itsTime, 1000)
