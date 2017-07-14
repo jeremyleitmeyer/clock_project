@@ -1,6 +1,7 @@
 #clock {
-
+  font-family: Courier;
   text-align: center;
   margin: 200px;
   font-size: 80px;
+  color: #fff;
 }
