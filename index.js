@@ -2,7 +2,7 @@ var clock = document.getElementById("clock")
 var bg = document.getElementById("bg-color")
 
 function newNum(num) {
-  return num <= 10 ? "0"+num : num
+  return num < 10 ? "0"+num : num
 }
 
 function itsTime() {
